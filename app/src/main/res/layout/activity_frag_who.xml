@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ww" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/overview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Overview"
+                    android:textColor="#303F9F"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/overview_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/overview"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:text="@string/overview"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/prevention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:text="Prevention"
+                    android:textColor="#303F9F"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/prevention"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:text="@string/prevention"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+
+
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/symptoms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:text="Symptoms"
+                    android:textColor="#303F9F"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/symptoms_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/symptoms"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:text="@string/symptoms"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+
+
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="When To Use Mask"
+        android:textSize="25sp"
+        android:textColor="#1976D2"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/mask1" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/mask2" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/mask3" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/mask4" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/mask5" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/mask6" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/mask7" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Covid 19 Myth busters"
+        android:textSize="25sp"
+        android:textColor="#1976D2"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/myth1" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/myth2" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/myth3" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/myth4" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/myth5" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/myth6" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/myth7" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/myth8" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/myth9" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/myth10" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/myth11" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/myth12" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/myth13" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/myth14" />
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protect yourself and others from getting sick"
+        android:textSize="25sp"
+        android:textColor="#1976D2"
+        android:layout_margin="10dp"
+        android:textStyle="bold"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/protect1" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/protect2" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/protect3" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/protect4" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Stay healthy while travelling"
+    android:textSize="25sp"
+    android:textColor="#FBC02D"
+    android:layout_margin="10dp"
+    android:textStyle="bold"/>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/travel1" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/travel2" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/travel3" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                app:cardCornerRadius="20dp">
+
+                <ImageView
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:src="@drawable/travel4" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+</LinearLayout>
+</ScrollView>

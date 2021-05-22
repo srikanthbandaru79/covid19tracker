@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/car"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/glo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/global_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/global"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                />
+            <TextView
+                android:id="@+id/global_txt"
+                android:layout_toRightOf="@id/global_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Global Real Time Counter"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textColor="#303F9F"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_below="@id/glo">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+
+
+
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/confirmed_img"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:padding="10dp"
+                    android:src="@drawable/activepatient"
+                    app:civ_border_color="#ffffff"
+                    app:civ_border_width="2dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/conformed_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/confirmed_img"
+                    android:text="Loading.."
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/recovered_img"
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:padding="10dp"
+                    android:src="@drawable/cured"
+                    app:civ_border_color="#ffffff"
+                    app:civ_border_width="2dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/recovered_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recovered_img"
+                    android:layout_centerInParent="true"
+                    android:text="Loading.."
+                    android:textColor="#1DF805"
+                    android:textSize="20sp"
+
+                    android:textStyle="bold"
+
+                    />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/dea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/counter"
+
+            android:layout_centerHorizontal="true"
+
+
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/deaths_img"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:padding="10dp"
+                android:src="@drawable/death"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="2dp"
+                android:layout_centerInParent="true"
+
+                />
+
+            <TextView
+                android:id="@+id/deaths_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading.."
+                android:textColor="#FA0404"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/deaths_img"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+
+
+        <ImageView
+            android:id="@+id/symptoms"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/car"
+            android:src="@drawable/symptoms" />
+
+        <ImageView
+            android:id="@+id/howtospread"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/symptoms"
+            android:src="@drawable/hs" />
+
+
+        <ImageView
+            android:id="@+id/prevention"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/howtospread"
+            android:src="@drawable/prevention" />
+
+
+        <ImageView
+            android:id="@+id/tc"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/tc"
+            android:layout_below="@id/prevention"
+            android:layout_marginBottom="15dp"/>
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:textColor="#06F0B9"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+
+
+        <TextView
+            android:id="@+id/provience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Provience"
+            android:textColor="#12237A"
+            android:textSize="20sp"
+           android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+
+
+        <RelativeLayout
+            android:id="@+id/conformed_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/country">
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/confirmed_img"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/activepatient"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+                android:padding="10dp"
+
+
+                />
+
+            <TextView
+                android:id="@+id/conformed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading.."
+                android:textColor="#000"
+                android:textSize="20sp"
+
+                android:layout_toRightOf="@id/confirmed_img"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/recovered_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/conformed_layout">
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/recovered_img"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/cured"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+                android:padding="10dp"
+
+                />
+            <TextView
+                android:id="@+id/recovered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading.."
+                android:textColor="#4DF106"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/recovered_img"
+                android:layout_centerInParent="true"/>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/deaths_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recovered_layout">
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/deaths_img"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:src="@drawable/death"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp"
+                android:padding="10dp"
+
+                />
+            <TextView
+                android:id="@+id/deaths"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading.."
+                android:textColor="#F10606"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/deaths_img"
+                android:layout_centerInParent="true"/>
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
